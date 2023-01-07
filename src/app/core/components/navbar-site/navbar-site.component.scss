@@ -1,10 +1,64 @@
 @import '../../../../styles/abstracts/variables';
+@import '../../../../styles/components/list';
+
+$logo-size: 50px;
 
 .navbar {
     width: 100%;
-    height: 60px;
+    height: $navbar-heigth;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding-inline: 20px;
-    background-color: red;
+}
+
+.logo {
+    width: $logo-size;
+    height: $logo-size;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    img {
+        width: $logo-size;
+        height: $logo-size;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $text-primary;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.active {
+    color: $text-tertiary;
+}
+
+@media(max-width: 480px) {
+    a {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: calc($logo-size - 20px);
+        min-width: calc($logo-size - 20px);
+        height: calc($logo-size - 20px);
+
+        img {
+            width: calc($logo-size - 20px);
+            height: calc($logo-size - 20px);
+        }
+    }
+}
+
+@media(max-width: 380px) {
+    li:nth-child(n+3) {
+        display: none;
+    }
 }
