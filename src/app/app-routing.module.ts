@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { NotFoundComponent } from './core/components/not-found/not-found.component';
 import { SiteComponent } from './modules/site/site.component';
 
 const routes: Routes = [
@@ -13,7 +14,8 @@ const routes: Routes = [
         loadChildren: () => import('./modules/site/site.module').then(module => module.SiteModule)
       }
     ]
-  }
+  },
+  { path: "**", component: NotFoundComponent }
 ];
 
 @NgModule({
