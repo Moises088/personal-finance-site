@@ -1,0 +1,25 @@
+@import '../../../../../styles/abstracts/variables';
+
+.container {
+    width: 100%;
+    height: calc(100% - $navbar-heigth);
+    position: relative;
+    overflow: hidden;
+}
+
+.divisor {
+    position: absolute;
+    width: 200%;
+    height: 40%;
+    margin-right: 450px;
+    background-color: $background-secondary;
+    bottom: -10px;
+    left: -20px;
+    rotate: -6deg;
+}
+
+.section {
+    width: 100%;
+    height: 500px;
+    background-color: $background-secondary;
+}
