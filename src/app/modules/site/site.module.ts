@@ -7,6 +7,7 @@ import { AboutProjectComponent } from './pages/about-project/about-project.compo
 import { SiteComponent } from './site.component';
 import { CoreModule } from 'src/app/core/core.module';
 import { HomeAppComponent } from './pages/home/components/home-app/home-app.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomeAppComponent } from './pages/home/components/home-app/home-app.comp
   imports: [
     CommonModule,
     SiteRoutingModule,
-    CoreModule
+    CoreModule,
+    SharedModule
   ]
 })
 export class SiteModule { }

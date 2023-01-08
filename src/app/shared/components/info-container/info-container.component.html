@@ -1,1 +1,19 @@
-<p>info-container works!</p>
+<div class="content" [ngStyle]="{backgroundColor: backgroundColor}">
+    <div class="container" [ngStyle]="{backgroundColor: backgroundColor, flexDirection}">
+
+        <div class="container-text {{flexDirection == 'row' ? '' : 'text-right'}}">
+            <h1 [ngClass]="getTitleClass()">{{title}}</h1>
+
+            <div style="text-align: justify;">
+                <span [ngClass]="getTitleClass()">
+                    {{message}}
+                </span>
+            </div>
+        </div>
+
+        <div class="container-image">
+            <img src="{{image}}" alt="IMAGE">
+        </div>
+
+    </div>
+</div>
