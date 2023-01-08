@@ -6,13 +6,15 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutProjectComponent } from './pages/about-project/about-project.component';
 import { SiteComponent } from './site.component';
 import { CoreModule } from 'src/app/core/core.module';
+import { HomeAppComponent } from './pages/home/components/home-app/home-app.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
     AboutProjectComponent,
-    SiteComponent
+    SiteComponent,
+    HomeAppComponent
   ],
   imports: [
     CommonModule,
