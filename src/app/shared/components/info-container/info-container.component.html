@@ -1,0 +1,13 @@
+<div class="content" [ngStyle]="{backgroundColor: backgroundColor}">
+    <div class="container" [ngStyle]="{backgroundColor: backgroundColor, flexDirection}">
+
+        <div class="container-text {{flexDirection == 'row' ? '' : 'text-right'}}">
+            <ng-content></ng-content>
+        </div>
+
+        <div class="container-image">
+            <img src="{{image}}" alt="IMAGE">
+        </div>
+
+    </div>
+</div>

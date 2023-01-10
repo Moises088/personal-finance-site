@@ -1,0 +1,17 @@
+<nav class="navbar">
+    <div class="logo">
+        <img src="./assets/logos/icon.png" alt="Personal Finance">
+    </div>
+
+    <ul>
+        <li>
+            <a href="/home" [ngClass]="getActive('/home')"> Home</a>
+        </li>
+        <li>
+            <a href="/about-project" [ngClass]="getActive('/about-project')"> Sobre o projeto</a>
+        </li>
+        <li>
+            <a href="/about-me" [ngClass]="getActive('/about-me')"> Sobre mim</a>
+        </li>
+    </ul>
+</nav>

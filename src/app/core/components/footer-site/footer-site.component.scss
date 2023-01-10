@@ -1,0 +1,62 @@
+@import '../../../../styles/components/list';
+@import '../../../../styles/abstracts/variables';
+
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 50px;
+    padding: 10px 20px;
+
+    a {
+        color: $text-primary;
+
+        &:hover {
+            color: $button-primary;
+        }
+    }
+
+    .container-footer {
+        width: 100%;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .content-col {
+        margin-inline: 15px;
+    }
+}
+
+ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: -10px;
+    color: #8c8a8a;
+
+    li {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-size: 15px;
+
+        a {
+            color: #FFF;
+        }
+    }
+}

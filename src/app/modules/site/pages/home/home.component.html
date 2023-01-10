@@ -1,0 +1,72 @@
+<section class="container">
+    <app-home-app></app-home-app>
+</section>
+
+<section class="info-containers">
+    <app-info-container [backgroundColor]="'#FFF'" [flexDirection]="'row'" [image]="'./assets/screens/AppCard.gif'">
+        <h1 class="title text-black">Gerencie suas faturas</h1>
+
+        <div style="text-align: justify;">
+            <span class="message text-black">
+                Faça gestão dos seus cartões, empréstimos, financiamentos, todos os tipos de dívidas.
+                Você escolhe o valor total e o valor mensal, em todos os seus orçamentos suas dívidas já são inclusas.
+                Tenha gráficos e veja em quanto tempo você quita suas contas.
+            </span>
+
+            <div>
+                <h4 class="text-black">Como fazer? </h4>
+                <ul>
+                    <li>- Escolha uma instituição. Ou escolha <i>Outro</i> e coloque o nome.</li>
+                    <li>- Preencha o valor total a ser pago.</li>
+                    <li>- Preencha o valor que vai ser pago por mês. (Caso for pagar em 1x não preencha). </li>
+                    <li>- Selecione a data de pagamento mensal.</li>
+                    <li>- <b>Pronto! Agora só salvar.</b></li>
+                </ul>
+            </div>
+        </div>
+    </app-info-container>
+
+    <app-info-container [backgroundColor]="'#0d1117'" [flexDirection]="'row-reverse'"
+        [image]="'./assets/screens/AppBudget1.png'">
+        <h1 class="title">Seu orçamento mensal</h1>
+
+        <div style="text-align: justify;">
+            <span class="message">
+                Gerencie o orçamento das suas contas e dívidas. Com um orçamento bem definido, você consegue se palenjar
+                e economizar no mês.
+                Com o Finance App você consegue, você acompanha o orçamento com gráficos e dados em tempo real.
+            </span>
+
+            <div>
+                <h4>Quais as vantagens?</h4>
+                <ul>
+                    <li>- Organizar as despesas.</li>
+                    <li>- Se planejar para o mês e não se perder com o seu dinheiro.</li>
+                    <li>- Enxugar os gastos para sobrar mais no fim do mês.</li>
+                    <li>- Fazer investimentos com o dinheiro, após pagar suas contas.</li>
+                </ul>
+            </div>
+        </div>
+    </app-info-container>
+
+    <app-info-container [backgroundColor]="'#FFF'" [flexDirection]="'row'" [image]="'./assets/screens/FinanceAppResponsive.png'">
+        <h1 class="title text-black">Versão WEB</h1>
+
+        <div style="text-align: justify;">
+            <span class="message text-black">
+                <b>Em breve</b> será lançado uma versão WEB que une não apenas o financeiro pessoal, como também o financeiro corporativo.
+                Você conseguirá fazer orçamentos e planejamentos para sua empresa de forma prática e objetiva. Você também terá um olhar
+                macro da sua evolução e da sua empresa.
+            </span>
+
+            <div>
+                <h4 class="text-black">Planos futuros</h4>
+                <ul>
+                    <li>- Disponibilizar API para integração com outros Softwares.</li>
+                    <li>- Sincronia do app com a web.</li>
+                    <li>- Mais opções para planejamento corporativo.</li>
+                </ul>
+            </div>
+        </div>
+    </app-info-container>
+</section>
