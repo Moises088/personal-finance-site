@@ -1,4 +1,5 @@
 @import '../../../../../styles/abstracts/variables';
+@import '../../../../../styles/components/list';
 
 .container {
     width: 100%;
@@ -9,24 +10,60 @@
 
 .info-containers {
     position: relative;
-    margin-top: -30px;
+    margin-top: -80px;
     z-index: 2;
 }
 
-@media(max-width: 910px){
-    .info-containers {
-        margin-top: -100px;
+.title {
+    margin-bottom: 12px;
+}
+
+.text-black {
+    color: #000;
+}
+
+h4 {
+    margin-bottom: 6px;
+}
+
+ul {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: -7px;
+    color: #8c8a8a;
+
+    li {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-size: 15px;
     }
 }
 
-@media(max-width: 510px){
+@media(max-width: 910px) {
     .info-containers {
-        margin-top: -250px;
+        margin-top: -150px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .message {
+        font-size: 14px;
     }
 }
 
-@media(max-width: 380px){
+@media(max-width: 510px) {
     .info-containers {
-        margin-top: -140px;
+        margin-top: -270px;
+    }
+}
+
+@media(max-width: 380px) {
+    .info-containers {
+        margin-top: -190px;
     }
 }

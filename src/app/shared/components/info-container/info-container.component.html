@@ -2,13 +2,7 @@
     <div class="container" [ngStyle]="{backgroundColor: backgroundColor, flexDirection}">
 
         <div class="container-text {{flexDirection == 'row' ? '' : 'text-right'}}">
-            <h1 [ngClass]="getTitleClass()">{{title}}</h1>
-
-            <div style="text-align: justify;">
-                <span [ngClass]="getTitleClass()">
-                    {{message}}
-                </span>
-            </div>
+            <ng-content></ng-content>
         </div>
 
         <div class="container-image">
