@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar-site',
@@ -9,13 +10,23 @@ export class NavbarSiteComponent implements OnInit {
 
   route: string = '';
 
+  constructor(
+    private readonly router: Router
+  ) { }
+
   ngOnInit(): void {
     const url = window.location.pathname;
-    this.route = url;
+    const last = url.split("/").pop();
+
+    if (last) this.route = last;
   }
 
   public getActive(route: string) {
     if (route == this.route) return "active"
     return ""
+  }
+
+  public navigate(route: string) {
+    this.router.navigate([route])
   }
 }

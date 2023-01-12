@@ -30,6 +30,7 @@ $logo-size: 50px;
 a {
     text-decoration: none;
     color: $text-primary;
+    cursor: pointer;
 
     &:hover {
         opacity: 0.8;
