@@ -1,6 +1,10 @@
 <div class="container">
     <div class="container-max">
         <h1 class="text-black">Linguagens e tecnologias usadas</h1>
+
+        <div class="container-card">
+            <app-card-technology *ngFor="let logo of logos" [img]="logo.img" [title]="logo.title"></app-card-technology>
+        </div>
     </div>
 </div>
 
@@ -41,11 +45,3 @@
         </span>
     </div>
 </app-info-container>
-
-<div class="container" style="background-color: red;">
-    <div class="container-max">
-        <div class="container-card">
-            <app-card-technology></app-card-technology>
-        </div>
-    </div>
-</div>
