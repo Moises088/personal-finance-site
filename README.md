@@ -1,27 +1,49 @@
-# PersonalFinanceSite
+<p align="center">
+  <img src="https://i.ibb.co/Xzb7TnY/icon.png" style="width:200px;"/>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
+# Site Financeiro
 
-## Development server
+Esse é um site criado para demonstrar o [Aplicativo](https://github.com/Moises088/personal-finance-app) de finanças pessoal.
+O objetivo do site futuramente é conter também um painel web para gerenciar os dados do app. Também oferecer uma gestão financeira
+para empresas.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Site
 
-## Code scaffolding
+- [Site](https://moises088.github.io/personal-finance-site/)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Autor
 
-## Build
+- [@moises088](https://github.com/Moises088)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Pré requisitos
 
-## Running unit tests
+- Angular CLI v15.0.5
+- Npm
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalação
 
-## Running end-to-end tests
+#### Instale o projeto com o npm
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Instale o angular-cli caso não possua:
+```bash
+  npm install -g @angular/cli
+```
 
-## Further help
+Clone o repositório:
+```bash
+  git clone https://github.com/Moises088/personal-finance-site.git
+```  
+Instale as depêndencias:
+```bash
+  npm install
+```  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Executar
+
+```bash
+  ng serve
+```
+
+## License (licença)
+Software is [MIT licensed](LICENSE).
