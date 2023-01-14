@@ -1,1 +1,47 @@
-<p>about-project works!</p>
+<div class="container">
+    <div class="container-max">
+        <h1 class="text-black">Linguagens e tecnologias usadas</h1>
+
+        <div class="container-card">
+            <app-card-technology *ngFor="let logo of logos" [img]="logo.img" [title]="logo.title"></app-card-technology>
+        </div>
+    </div>
+</div>
+
+<app-info-container [backgroundColor]="'#FFF'" [flexDirection]="'row'" [image]="'./assets/logos/angular.png'">
+    <h1 class="title text-black">Angular</h1>
+
+    <div style="text-align: justify;" class="container-message">
+        <span class="message text-black">
+            <b>Sobre o Angular:</b> Angular é uma plataforma de aplicações web de código-fonte aberto e front-end
+            baseado em TypeScript. Foi utilizado para contruir toda estrutura do front-end web.
+        </span>
+    </div>
+</app-info-container>
+
+<app-info-container [backgroundColor]="'#0d1117'" [flexDirection]="'row-reverse'"
+    [image]="'./assets/logos/react-native.png'">
+    <h1 class="title">React Native</h1>
+
+    <div style="text-align: justify;" class="container-message">
+        <span class="message">
+            <b>Sobre o React Native:</b> É um framework para desenvolvimento de aplicativos multiplataforma.
+            Funciona como uma biblioteca e facilitador de recursos de JavaScript que possibilita o desenvolvimento de
+            aplicações mobile, tanto para Android como para iOS.
+            Todo o aplicativo foi contruido utilizando o <b>React Native + Expo.</b>
+        </span>
+    </div>
+</app-info-container>
+
+<app-info-container [backgroundColor]="'#FFF'" [flexDirection]="'row'" [image]="'./assets/logos/nestjs.png'">
+    <h1 class="title text-black">Nestjs</h1>
+
+    <div style="text-align: justify;" class="container-message">
+        <span class="message text-black">
+            <b>Sobre o Nestjs:</b> é uma estrutura para criar aplicativos Node.js eficientes e escaláveis
+            do lado do servidor. Ele usa JavaScript progressivo, é construído com e totalmente compatível com
+            TypeScript e combina elementos de OOP (Programação Orientada a Objetos). Todo o back-end está sendo
+            construído utilizando o Nestjs.
+        </span>
+    </div>
+</app-info-container>

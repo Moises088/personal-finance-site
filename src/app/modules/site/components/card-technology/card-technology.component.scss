@@ -1,0 +1,38 @@
+@import '../../../../../styles/abstracts/variables';
+
+.container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    .container-logo {
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        overflow: hidden;
+        background-color: $background-tertiary;
+
+        img {
+            max-width: 45px;
+            max-height: 45px;
+            object-fit: contain;
+        }
+    }
+
+    .container-message {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+        margin-left: -15px;
+        padding-left: 18px;
+        border-radius: 10px;
+        background-color: $background-tertiary;
+    }
+}
