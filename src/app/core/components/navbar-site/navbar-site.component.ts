@@ -15,6 +15,10 @@ export class NavbarSiteComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.setActiveRoute()
+  }
+
+  public setActiveRoute() {
     const url = window.location.pathname;
     const last = url.split("/").pop();
 
@@ -28,5 +32,6 @@ export class NavbarSiteComponent implements OnInit {
 
   public navigate(route: string) {
     this.router.navigate([route])
+    this.route = route.replace("/", "")
   }
 }

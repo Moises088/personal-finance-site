@@ -6,8 +6,10 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutProjectComponent } from './pages/about-project/about-project.component';
 import { SiteComponent } from './site.component';
 import { CoreModule } from 'src/app/core/core.module';
-import { HomeAppComponent } from './pages/home/components/home-app/home-app.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { HomeAppComponent } from './components/home-app/home-app.component';
+import { InfoContainerComponent } from './components/info-container/info-container.component';
+import { CardTechnologyComponent } from './components/card-technology/card-technology.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     HomeComponent,
     AboutProjectComponent,
     SiteComponent,
-    HomeAppComponent
+    HomeAppComponent,
+    InfoContainerComponent,
+    CardTechnologyComponent
   ],
   imports: [
     CommonModule,
